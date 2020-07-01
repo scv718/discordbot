@@ -1,5 +1,5 @@
 import discord
-
+import os
 client = discord.Client()
 
 @client.event
@@ -93,6 +93,7 @@ async def on_message(message):
                                        "10단계 - 1480개"
                                    "```")
 
-client.run("NzI3ODU2MDk0NDQ1MDQzODUz.Xvx7Wg.XNraMY7D2h73RyxGTL4g39YVKT8")
+access token = os.environ["BOT_TOKEN"]
+client.run(access token)
 
 

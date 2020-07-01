@@ -91,7 +91,47 @@ async def on_message(message):
                                        "8단계 - 1250개\n"
                                        "9단계 - 1365개\n"
                                        "10단계 - 1480개"
-                                   "```")
+                                        "```")
+
+    if message.content.startswith("!보조무기"):
+       await message.channel.send("```유누베르, 쿠툼\n"
+                                       "1단계 - 124개\n"
+                                       "2단계 - 208개\n"
+                                       "3단계 - 332개\n"
+                                       "4단계 - 582개\n"
+                                       "```")
+       await message.channel.send("```동누베르, 쿠툼\n"
+                                       "1단계 - 297개\n"
+                                       "2단계 - 389개\n"
+                                       "3단계 - 481개\n"
+                                       "4단계 - 573개\n"
+                                       "5단계 - 905개\n"
+                                       "6단계 - 1020개\n"
+                                       "7단계 - 1135개\n"
+                                       "8단계 - 1250개\n"
+                                       "9단계 - 1365개\n"
+                                       "10단계 - 1480개"
+                                     "```")
+
+    if message.content.startswith("!단델"):
+       await message.channel.send("```유단델\n"
+                                       "1단계 - 144개\n"
+                                       "2단계 - 240개\n"
+                                       "3단계 - 384개\n"
+                                       "4단계 - 672개\n"
+                                       "```")
+       await message.channel.send("```동단델\n"
+                                       "1단계 - 345개\n"
+                                       "2단계 - 451개\n"
+                                       "3단계 - 556개\n"
+                                       "4단계 - 662개\n"
+                                       "5단계 - 1044개\n"
+                                       "6단계 - 1176개\n"
+                                       "7단계 - 1308개\n"
+                                       "8단계 - 1440개\n"
+                                       "9단계 - 1573개\n"
+                                       "10단계 - 1705개"
+                                     "```")
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)

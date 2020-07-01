@@ -1,14 +1,9 @@
 import discord
 import os
 client = discord.Client()
-
 @client.event
 
-async def on_help(message):
-    if message.content.startswith("!도움말"):
-        await message.channel.send("```! 붙이고 선원, 우둔, 방어구, 크자카, 단델, 보조무기, 녹뚝 을 입력하세요```")
-        
-        
+
 async def on_message(message):
     if message.content.startswith("!선원"):
         await message.channel.send("```렙업당 각 레벨별 최대 수치 - 순수한 선원 \n"
@@ -138,6 +133,16 @@ async def on_message(message):
                                        "9단계 - 1573개\n"
                                        "10단계 - 1705개"
                                      "```")
+    if message.content.startswith("!도움말"):
+        await message.channel.send("```!(느낌표)를 앞에 입력후\n"
+                                   "선원\n"
+                                   "우둔\n"
+                                   "방어구\n"
+                                   "크자카\n"
+                                   "단델\n"
+                                   "보조무기\n"
+                                   "녹뚝\n"
+                                   "입력하세요(ex: !선원)```")
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)

@@ -3,6 +3,12 @@ import os
 client = discord.Client()
 
 @client.event
+
+async def on_help(message):
+    if message.content.startswith("!도움말"):
+        await message.channel.send("```! 붙이고 선원, 우둔, 방어구, 크자카, 단델, 보조무기, 녹뚝 을 입력하세요```")
+        
+        
 async def on_message(message):
     if message.content.startswith("!선원"):
         await message.channel.send("```렙업당 각 레벨별 최대 수치 - 순수한 선원 \n"

@@ -170,7 +170,7 @@ async def on_message(message):
             embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147135593316372/yes.gif")
             await message.channel.send(embed=embed)
         else:
-            embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147124621017158/no.jpg")
+            embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728170635309613146/noo.jpg")
             await message.channel.send(embed=embed)
 
         

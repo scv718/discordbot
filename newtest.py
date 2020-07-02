@@ -1,7 +1,8 @@
 import discord
+import random
 import os
 client = discord.Client()
-embed=discord.Embed(title="Embed", description="설명", color=0x00aaaa)
+embed=discord.Embed(title="   ", description="  ", color=0x00aaaa)
 
 @client.event
 
@@ -146,18 +147,36 @@ async def on_message(message):
                                    "녹뚝\n"
                                    "보너스구간\n"
                                    "공효율\n"
-                                   "입력하세요(ex: !선원)```")
+                                   "입력하세요(ex: !선원)\n"
+                                   "소라고둥님, 마법의소라고둥님 을 붙이면 소라고둥님이 나와요```")
 
     if message.content.startswith("!보너스구간"):
-        embed.add_field(name="보너스구간",value="보너스구간", inline = False)
         embed.set_image(url="https://media.discordapp.net/attachments/727925313497071698/728129207787454514/a0379cb56dd4458c.jpg?width=492&height=579")
         await message.channel.send(embed=embed)
 
     if message.content.startswith("!공효율"):
-        embed.add_field(name="공효율",value="공효율", inline = False)
         embed.set_image(url="https://media.discordapp.net/attachments/727925313497071698/728136520963457044/5a1d66e3af037f92.png")
         await message.channel.send(embed=embed)
 
+    if message.content.startswith("소라고둥님"):
+        number = random.randrange(11)
+        if number % 2 == 1:
+            embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147135593316372/yes.gif")
+            await message.channel.send(embed=embed)
+        else:
+            embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147124621017158/no.jpg")
+            await message.channel.send(embed=embed)
+
+    if message.content.startswith("마법의소라고둥님"):
+        number = random.randrange(11)
+        if number % 2 == 1:
+            embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147135593316372/yes.gif")
+            await message.channel.send(embed=embed)
+        else:
+            embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147124621017158/no.jpg")
+            await message.channel.send(embed=embed)
+
+        
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)

@@ -1,15 +1,6 @@
 import discord
 import random
 import os
-client = discord.Client()
-embed=discord.Embed(title="   ", description="  ", color=0x00aaaa)
-
-@client.event
-
-
-import discord
-import random
-import os
 
 
 client = discord.Client()

@@ -1,6 +1,8 @@
 import discord
 import os
 client = discord.Client()
+embed=discord.Embed(title="Embed", description="설명", color=0x00aaaa)
+
 @client.event
 
 

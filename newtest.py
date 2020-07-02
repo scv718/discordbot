@@ -142,6 +142,8 @@ async def on_message(message):
                                    "단델\n"
                                    "보조무기\n"
                                    "녹뚝\n"
+                                   "보너스구간\n"
+                                   "공효율\n"
                                    "입력하세요(ex: !선원)```")
 
     if message.content.startswith("!보너스구간"):

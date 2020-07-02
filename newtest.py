@@ -166,7 +166,6 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith("소라고둥님") or message.content.startswith(tuple("마법의 소라고둥님".split())):
-        number = random.randrange(11)
         if random.choice(count) == 1:
             embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147135593316372/yes.gif")
             await message.channel.send(embed=embed)

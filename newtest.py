@@ -154,7 +154,8 @@ async def on_message(message):
                                    "녹뚝\n"
                                    "보너스구간\n"
                                    "공효율\n"
-                                   "입력하세요(ex: !선원)\n"
+                                   "추적 [이름]\n"
+                                   "입력하세요(ex: !선원, !추적 )\n"
                                    "소라고둥님, 마법의소라고둥님 을 붙이면 소라고둥님이 나와요```")
 
     if message.content.startswith("!보너스구간"):
@@ -195,6 +196,10 @@ async def on_message(message):
       ":heart:야이돌이아넌데렌엘:heart:\n"
       ":heart::heart::heart::heart::heart::heart::heart::heart::heart:\n")
         
+    if message.content.startswith("!추적"):
+        Nickname = message.content.split(' ')[1]
+        await message.channel.send('site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname)
+        await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)

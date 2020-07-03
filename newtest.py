@@ -155,7 +155,7 @@ async def on_message(message):
                                    "보너스구간\n"
                                    "공효율\n"
                                    "추적 [이름]\n"
-                                   "입력하세요(ex: !선원, !추적 )\n"
+                                   "입력하세요(ex: !선원, !추적 [가문명])\n"
                                    "소라고둥님, 마법의소라고둥님 을 붙이면 소라고둥님이 나와요```")
 
     if message.content.startswith("!보너스구간"):

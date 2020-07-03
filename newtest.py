@@ -180,19 +180,6 @@ async def on_message(message):
         else:
             embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147124621017158/no.jpg")
             await message.channel.send(embed=embed)
-            
-    if message.content.startswith("!엘렌데"):
-        await message.chennel.send(":heart: :heart: :heart: :heart: :heart: :heart: \n
-엘렌데넌아이돌이야\n
-렌                               이\n
-데                               돌\n
-넌                               이\n
-아                               아\n
-이                               넌\n
-돌                               데\n
-이                               렌\n
-야이돌이아넌데렌엘\n
-:heart: :heart: :heart: :heart: :heart: :heart:\n")
 
         
         

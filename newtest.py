@@ -143,7 +143,7 @@ async def on_message(message):
                                        "9단계 - 1573개\n"
                                        "10단계 - 1705개"
                                      "```")
-    if message.content.startswith("!도움말") or message.content.startswith("!"):
+    if message.content.startswith("!도움말") or message.content.startswith("!명령어"):
         await message.channel.send("```!(느낌표)를 앞에 입력후\n"
                                    "선원\n"
                                    "우둔\n"

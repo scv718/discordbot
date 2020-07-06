@@ -184,7 +184,7 @@ async def on_message(message):
             
             
     if message.content.startswith("!엘렌데"):
-        await message.channel.sendprint(":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:\n"
+        await message.channel.send(":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:\n"
       ":heart:엘렌데야넌아이돌이야:heart:\n"
       ":heart:렌                　               이:heart:\n"
       ":heart:데              엘                 돌:heart:\n"

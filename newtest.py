@@ -184,17 +184,17 @@ async def on_message(message):
             
             
     if message.content.startswith("!엘렌데"):
-        await message.channel.send(":heart::heart::heart::heart::heart::heart::heart::heart::heart:\n"
-      ":heart:엘렌데넌아이돌이야:heart:\n"
-      ":heart:렌               　           이:heart:\n"
-      ":heart:데             엘             돌:heart:\n"
-      ":heart:넌             렌             이:heart:\n"
-      ":heart:아             데             아:heart:\n"
-      ":heart:이             귓             넌:heart:\n"
-      ":heart:돌            :heart_eyes:    　    데:heart:\n"
-      ":heart:이                      　    렌:heart:\n"
-      ":heart:야이돌이아넌데렌엘:heart:\n"
-      ":heart::heart::heart::heart::heart::heart::heart::heart::heart:\n")
+        await message.channel.sendprint(":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:\n"
+      ":heart:엘렌데야넌아이돌이야:heart:\n"
+      ":heart:렌                　               이:heart:\n"
+      ":heart:데              엘                 돌:heart:\n"
+      ":heart:넌              렌                 이:heart:\n"
+      ":heart:아              데                 아:heart:\n"
+      ":heart:이              귓                 넌:heart:\n"
+      ":heart:돌             :heart_eyes:   　         데:heart:\n"
+      ":heart:이                      　         렌:heart:\n"
+      ":heart:야이돌이야넌야데렌엘:heart:\n"
+      ":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:")
         
     if message.content.startswith("!추적"):
         Nickname = message.content.split(' ')[1]

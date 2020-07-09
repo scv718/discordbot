@@ -3,8 +3,6 @@ asyncio
 selenium
 Request
 urlopen
-urllib.request
 urllib
-urllib.request
 bs4
 os

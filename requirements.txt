@@ -4,4 +4,3 @@ selenium
 Request
 urlopen
 bs4
-os

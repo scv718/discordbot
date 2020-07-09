@@ -212,7 +212,13 @@ async def on_message(message):
       ":heart:야이돌이야넌야데렌엘:heart:\n"
       ":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:")
         
+        
     if message.content.startswith("!추적"):
+        Nickname = message.content.split(' ')[1]
+        await message.channel.send('site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname)
+        await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")
+     
+    if message.content.startswith("!검색"):
         Nickname = message.content.split(' ')[1]
         await message.channel.send('site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname)
         await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")

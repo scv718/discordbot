@@ -1,8 +1,6 @@
 discord.py==1.3.3
 asyncio
 selenium
-webdriver
-youtube_dl
 Request
 urlopen
 urllib.request

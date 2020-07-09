@@ -226,7 +226,7 @@ async def on_message(message):
             Text = Text + " " + learn[i]
         encText = Text
 
-        chromedriver_dir = r'CHROMEDRIVER_PATH'
+        chromedriver_dir = r'load_chrome_driver'
         driver = webdriver.Chrome(chromedriver_dir)
         driver.get('https://www.google.co.kr/search?q=site:%20https:%20//%20www.kr.playblackdesert.com%20/%20adventure%20/%20guild' + encText)
         source = driver.page_source

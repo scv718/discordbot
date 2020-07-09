@@ -1,6 +1,5 @@
 discord.py==1.3.3
 asyncio
-random
 selenium
 webdriver
 youtube_dl

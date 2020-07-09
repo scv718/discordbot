@@ -1,30 +1,15 @@
 import discord
 import asyncio
 import random
-from selenium import webdriver
-from urllib.request import urlopen, Request
-import urllib
-import urllib.request
 import bs4
 import os
-from selenium.webdriver.chrome.options import Options
+
 
 client = discord.Client()
 embed=discord.Embed(title="   ", description="   ", color=0x00aaaa)
 count = [1, 2]
 
-def load_chrome_driver(proxy):
-    options = Options()
 
-    options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
-
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--remote-debugging-port=9222')
-    options.add_argument('--proxy-server=' + proxy)
-
-    return webdriver.Chrome(executable_path=str(os.environ.get('CHROMEDRIVER_PATH')), chrome_options=options)
 
 
 @client.event
@@ -217,27 +202,7 @@ async def on_message(message):
         Nickname = message.content.split(' ')[1]
         await message.channel.send('site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname)
         await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")
-     
-    if message.content.startswith("!검색"):
-        Nickname = message.content.split(' ')[1]
-        await message.channel.send('site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname)
-        await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")
-        
-        if message.content.startswith('!검색'):
-        Text = ""
-        learn = message.content.split(" ")
-        vrsize = len(learn)
-        vrsize = int(vrsize)
-        for i in range(1, vrsize):
-            Text = Text + " " + learn[i]
-        encText = Text
 
-        chromedriver_dir = r'load_chrome_driver'
-        driver = webdriver.Chrome(chromedriver_dir)
-        driver.get('https://www.google.co.kr/search?q=site:%20https:%20//%20www.kr.playblackdesert.com%20/%20adventure%20/%20guild' + encText)
-        source = driver.page_source
-        bs = bs4.BeautifulSoup(source, 'lxml')
-        entire = bs.find_all('a', {'id': 'video-title'})
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)

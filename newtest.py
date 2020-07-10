@@ -211,13 +211,6 @@ async def on_message(message):
         Nickname = message.content.split(' ')[1]
         await message.channel.send('site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname)
         await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")
-        
-    guild = message.guild
-    if guild:
-        path = "chatlogs{}.txt".format(guild.id)
-        with open(path, 'a+') as f:
-            print("{0.author.name} : {0.content}".format(message), file=f)
-    await bot.process_commands(message)
 
         
 access_token = os.environ["BOT_TOKEN"]

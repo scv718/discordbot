@@ -1,15 +1,9 @@
 import discord
-import contextvars
 from discord.ext import commands
 import asyncio
 import random
-from selenium import webdriver
-from urllib.request import urlopen, Request
-import urllib
-import urllib.request
 import bs4
 import os
-from selenium.webdriver.chrome.options import Options
 from datetime import datetime
 import time
 

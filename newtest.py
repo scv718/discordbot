@@ -3,7 +3,7 @@ import asyncio
 import random
 import bs4
 import os
-from discord.ext import commands
+
 
 
 client = discord.Client()
@@ -14,8 +14,7 @@ count = [1, 2]
 
 
 @client.event
-
-    
+async def on_message(message):
     if message.content.startswith("!선원"):
         await message.channel.send("```렙업당 각 레벨별 최대 수치 - 순수한 선원 \n"
                                    "2 - 1.4\n"

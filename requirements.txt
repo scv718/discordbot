@@ -5,5 +5,4 @@ Request
 urlopen
 bs4
 Options
-discord.ext
 commands

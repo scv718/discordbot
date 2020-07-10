@@ -209,7 +209,6 @@ async def on_message(message):
     guild = message.guild
     if guild:
         path = "C:\chatlogs{}.txt".format(guild.id)
-
         with open(path, 'a+') as f:
             print("{0.author.name} : {0.content}".format(message), file=f)
         

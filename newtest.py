@@ -9,7 +9,7 @@ client = discord.Client()
 embed = discord.Embed(title="   ", description="   ", color=0x00aaaa)
 count = [1, 2]
 bot = commands.Bot(command_prefix='!')
-channel = 731082853852381194
+channel = 731012289452572685
 
 @client.event
 @bot.event

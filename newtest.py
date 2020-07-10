@@ -9,21 +9,12 @@ from discord.ext import commands
 client = discord.Client()
 embed=discord.Embed(title="   ", description="   ", color=0x00aaaa)
 count = [1, 2]
-bot = commands.Bot(command_prefix='!')
 
 
 
 
 @client.event
-@bot.event
 
-async def on_message(message):
-    guild = message.guild
-    if guild:
-        path = "chatlogs{}.txt".format(guild.id)
-        with open(path, 'a+') as f:
-            print("{0.author.name} : {0.content}".format(message), file=f)
-    await bot.process_commands(message)
     
     if message.content.startswith("!선원"):
         await message.channel.send("```렙업당 각 레벨별 최대 수치 - 순수한 선원 \n"

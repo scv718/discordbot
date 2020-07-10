@@ -1,20 +1,37 @@
 import discord
+import contextvars
+from discord.ext import commands
 import asyncio
 import random
+from selenium import webdriver
+from urllib.request import urlopen, Request
+import urllib
+import urllib.request
 import bs4
 import os
+from selenium.webdriver.chrome.options import Options
+from datetime import datetime
+import time
 
 
 
 client = discord.Client()
 embed=discord.Embed(title="   ", description="   ", color=0x00aaaa)
 count = [1, 2]
-
+bot = commands.Bot(command_prefix='!')
 
 
 
 @client.event
+@bot.event
 async def on_message(message):
+    guild = message.guild
+    if guild:
+        path = "chatlogs{}.txt".format(guild.id)
+        with open(path, 'a+') as f:
+            print("{0.author.name} : {0.content}".format(message), file=f)
+    await bot.process_commands(message)
+    
     if message.content.startswith("!선원"):
         await message.channel.send("```렙업당 각 레벨별 최대 수치 - 순수한 선원 \n"
                                    "2 - 1.4\n"

@@ -13,6 +13,7 @@ client = discord.Client()
 embed=discord.Embed(title="   ", description="   ", color=0x00aaaa)
 count = [1, 2]
 bot = commands.Bot(command_prefix='!')
+channel = 727925313497071698
 
 
 
@@ -211,6 +212,12 @@ async def on_message(message):
         path = "C:\chatlogs{}.txt".format(guild.id)
         with open(path, 'a+') as f:
             print("{0.author.name} : {0.content}".format(message), file=f)
+    
+    if message.author.bot:
+        return
+
+    data = f"[{datetime.datetime.today()}] {message.author.name}: {message.content}"
+    await client.get_channel(channel).send(data)
         
 
 

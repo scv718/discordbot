@@ -189,7 +189,7 @@ async def on_message(message):
             embed.set_image(url="https://cdn.discordapp.com/attachments/727925313497071698/728147124621017158/no.jpg")
             await message.channel.send(embed=embed)
 
-    if message.content.startswith("!추적 "):
+    if message.content.startswith("!추적"):
         Nickname = message.content.split(' ')[1]
         url = 'site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname
         await message.channel.send('%s',url)

@@ -192,7 +192,7 @@ async def on_message(message):
     if message.content.startswith("!추적"):
         Nickname = message.content.split(' ')[1]
         url = 'site:https://www.kr.playblackdesert.com/adventure/guild '+ Nickname
-        await message.channel.send('%s',url)
+        await message.channel.send('%s' +url)
         await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")
 
     guild = message.guild

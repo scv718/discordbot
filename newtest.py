@@ -193,7 +193,7 @@ async def on_message(message):
         Nickname = message.content.split(' ')[1]
         url = 'https://www.google.co.kr/search?q=site:https://www.kr.playblackdesert.com/adventure/guild%20{}'.format(Nickname)
         await message.channel.send(url)
-        await message.channel.send("위에 내용을 그대로 구글에 붙여넣어 검색하세요")
+        await message.channel.send("링크로 들어가세요")
 
     guild = message.guild
     if guild:

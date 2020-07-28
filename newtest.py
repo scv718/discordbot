@@ -143,6 +143,18 @@ async def on_message(message):
                                    "9단계 - 1573개\n"
                                    "10단계 - 1705개"
                                    "```")
+    if message.content.startswith("!고녹각"):
+        embed.set_image(
+            url="https://cdn.discordapp.com/attachments/727925313497071698/737638703043838002/unknown.png")
+        await message.channel.send("``` 고녹각 19단까지 435개 소모```")
+        await message.channel.send(embed=embed)
+
+    if message.content.startswith("!고단델"):
+        embed.set_image(
+            url="https://cdn.discordapp.com/attachments/727925313497071698/737638703043838002/unknown.png")
+        await message.channel.send("``` 고단델 19단까지 1700개 소모```")
+        await message.channel.send(embed=embed)
+        
     if message.content.startswith("!도움말") or message.content.startswith("!명령어"):
         await message.channel.send("```!(느낌표)를 앞에 입력후\n"
                                    "선원\n"

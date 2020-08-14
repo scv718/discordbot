@@ -47,7 +47,7 @@ async def on_message(message):
                                    "10단계 - 1448개"
                                    "```")
     if message.content.startswith("!방어구"):
-        await message.channel.send("```동보스방어구(우둔제외)\n"
+        await message.channel.send("```보스방어구(우둔제외)\n"
                                    "1단계 - 76개\n"
                                    "2단계 - 128개\n"
                                    "3단계 - 204개\n"

@@ -183,6 +183,20 @@ async def on_message(message):
                                    ":heart:야이돌이야넌야데렌엘:heart:\n"
                                    ":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:")
         
+     if message.content.startswith("!유문하"):
+        await message.channel.send(":heart::heart::heart::heart: :heart: :heart: :heart::heart:\n"
+                                    ":heart:유문하야넌돌아이야:heart:\n"
+                                    ":heart:문                　           이:heart:\n"
+                                    ":heart:하              유             아:heart:\n"
+                                    ":heart:넌              문             돌:heart:\n"
+                                    ":heart:돌              하             넌:heart:\n"
+                                    ":heart:아              귓             하:heart:\n"
+                                    ":heart:이             :face_vomiting:           문:heart:\n"
+                                    ":heart:야이아돌넌야하문유:heart:\n"
+                                    ":heart::heart::heart::heart: :heart: :heart: :heart::heart:\n")
+        
+      
+        
     if message.content.startswith("!보너스구간"):
         embed.set_image(
             url="https://cdn.discordapp.com/attachments/727925313497071698/751785513681289266/18c75b0fb92537ff.png")

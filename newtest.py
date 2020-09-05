@@ -165,7 +165,7 @@ async def on_message(message):
                                    "보조무기\n"
                                    "녹뚝\n"
                                    "보너스구간\n"
-                                   "공효율\n"
+                                   "공방효율\n"
                                    "추적 [이름]"
                                    "입력하세요(ex: !선원)\n"
                                    "소라고둥님, 마법의소라고둥님 을 붙이면 소라고둥님이 나와요```")
@@ -185,12 +185,12 @@ async def on_message(message):
         
     if message.content.startswith("!보너스구간"):
         embed.set_image(
-            url="https://media.discordapp.net/attachments/727925313497071698/728129207787454514/a0379cb56dd4458c.jpg?width=492&height=579")
+            url="https://cdn.discordapp.com/attachments/727925313497071698/751785513681289266/18c75b0fb92537ff.png")
         await message.channel.send(embed=embed)
 
-    if message.content.startswith("!공효율"):
+    if message.content.startswith("!공방효율"):
         embed.set_image(
-            url="https://media.discordapp.net/attachments/727925313497071698/728136520963457044/5a1d66e3af037f92.png")
+            url="https://cdn.discordapp.com/attachments/727925313497071698/751785513681289266/18c75b0fb92537ff.png")
         await message.channel.send(embed=embed)
 
     if message.content.startswith("소라고둥님") or message.content.startswith(tuple("마법의 소라고둥님".split())):

@@ -191,7 +191,7 @@ async def on_message(message):
                                     ":heart:넌              문             돌:heart:\n"
                                     ":heart:돌              하             넌:heart:\n"
                                     ":heart:아              귓             하:heart:\n"
-                                    ":heart:이             :face_vomiting:           문:heart:\n"
+                                    ":heart:이             :face_vomiting:            문:heart:\n"
                                     ":heart:야이아돌넌야하문유:heart:\n"
                                     ":heart::heart::heart::heart: :heart: :heart: :heart::heart:")
         

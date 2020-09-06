@@ -195,6 +195,17 @@ async def on_message(message):
                                     ":heart:야이아돌넌야하문유:heart:\n"
                                     ":heart::heart::heart::heart: :heart: :heart: :heart::heart:")
         
+    if message.content.startswith("!우멩"):
+        await message.channel.send(":new_moon_with_face::new_moon: :new_moon_with_face: :new_moon: :new_moon_with_face: :new_moon: :new_moon_with_face:\n"
+                                    ":new_moon:쓸개야넌돌멩이야:new_moon:\n"
+                                    ":new_moon_with_face:개                           이:new_moon_with_face:\n"
+                                    ":new_moon:넌           돌            멩:new_moon:\n"
+                                    ":new_moon_with_face:돌           멩            돌:new_moon_with_face:\n"
+                                    ":new_moon:멩           귓            넌:new_moon:\n"
+                                    ":new_moon_with_face:이           :new_moon_with_face:           개:new_moon_with_face:\n"
+                                    ":new_moon:야이멩돌넌야개쓸 :new_moon:\n"
+                                    ":new_moon_with_face::new_moon: :new_moon_with_face: :new_moon:  :new_moon_with_face: :new_moon: :new_moon_with_face:\n")
+        
       
         
     if message.content.startswith("!보너스구간"):

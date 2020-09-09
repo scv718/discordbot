@@ -206,6 +206,18 @@ async def on_message(message):
                                     ":new_moon:야이멩돌넌야개쓸 :new_moon:\n"
                                     ":new_moon_with_face::new_moon: :new_moon_with_face: :new_moon:  :new_moon_with_face: :new_moon: :new_moon_with_face:\n")
         
+    if message.content.startswith("!아브락스") or message.content.startswith("!아뷰락스") or message.content.startswith("!아뷰락수") or message.content.startswith("!Abrax"):
+        await message.channel.send(":peach::peach::peach::peach::peach::peach::peach::peach:\n"
+                                    ":peach:동탄암컷아뷰락수 :peach:\n"
+                                    ":peach:탄          A              락 :peach:\n"
+                                    ":peach:암          b               뷰 :peach:\n"
+                                    ":peach:컷          r                아 :peach:\n"
+                                    ":peach:아          a               컷 :peach:\n"
+                                    ":peach:뷰          x               암 :peach:\n"
+                                    ":peach:락                           탄 :peach:\n"
+                                    ":peach:수락뷰아컷암탄동 :peach:\n"
+                                    ":peach::peach::peach::peach::peach::peach::peach::peach:")
+        
       
         
     if message.content.startswith("!보너스구간"):

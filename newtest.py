@@ -240,7 +240,7 @@ async def on_message(message):
 
     if message.content.startswith("!추적"):
         Nickname = message.content.split(' ')[1]
-        url = 'https://www.google.co.kr/search?q=site:https://www.kr.playblackdesert.com/adventure/guild%20{}'.format(Nickname)+'&sxsrf=ALeKk00AaKTEmJF47JRihisaqLuZILW2IA:1616232614408&filter=0&biw=1412&bih=513'
+        url = 'https://www.google.co.kr/search?q=site:https://www.kr.playblackdesert.com/adventure/guild%20{}'.format(Nickname)
         await message.channel.send(url)
         await message.channel.send("```위에 링크로 접속.```")
 

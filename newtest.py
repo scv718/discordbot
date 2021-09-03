@@ -169,54 +169,6 @@ async def on_message(message):
                                    "추적 [이름]"
                                    "입력하세요(ex: !선원)\n"
                                    "소라고둥님, 마법의소라고둥님 을 붙이면 소라고둥님이 나와요```")
-
-    if message.content.startswith("!엘렌데"):
-        await message.channel.send(":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:\n"
-                                   ":heart:엘렌데야넌아이돌이야:heart:\n"
-                                   ":heart:렌                　               이:heart:\n"
-                                   ":heart:데              엘                 돌:heart:\n"
-                                   ":heart:넌              렌                 이:heart:\n"
-                                   ":heart:아              데                 아:heart:\n"
-                                   ":heart:이              귓                 넌:heart:\n"
-                                   ":heart:돌             :heart_eyes:   　         데:heart:\n"
-                                   ":heart:이                      　         렌:heart:\n"
-                                   ":heart:야이돌이야넌야데렌엘:heart:\n"
-                                   ":heart::heart::heart::heart: :heart: :heart::heart::heart::heart:")
-        
-    if message.content.startswith("!유문하"):
-        await message.channel.send(":heart::heart::heart::heart: :heart: :heart: :heart::heart:\n"
-                                    ":heart:유문하야넌돌아이야:heart:\n"
-                                    ":heart:문                　           이:heart:\n"
-                                    ":heart:하              유             아:heart:\n"
-                                    ":heart:넌              문             돌:heart:\n"
-                                    ":heart:돌              하             넌:heart:\n"
-                                    ":heart:아              귓             하:heart:\n"
-                                    ":heart:이             :face_vomiting:            문:heart:\n"
-                                    ":heart:야이아돌넌야하문유:heart:\n"
-                                    ":heart::heart::heart::heart: :heart: :heart: :heart::heart:")
-        
-    if message.content.startswith("!우멩"):
-        await message.channel.send(":new_moon_with_face::new_moon: :new_moon_with_face: :new_moon: :new_moon_with_face: :new_moon: :new_moon_with_face:\n"
-                                    ":new_moon:쓸개야넌돌멩이야:new_moon:\n"
-                                    ":new_moon_with_face:개                           이:new_moon_with_face:\n"
-                                    ":new_moon:넌           돌            멩:new_moon:\n"
-                                    ":new_moon_with_face:돌           멩            돌:new_moon_with_face:\n"
-                                    ":new_moon:멩           귓            넌:new_moon:\n"
-                                    ":new_moon_with_face:이           :new_moon_with_face:           개:new_moon_with_face:\n"
-                                    ":new_moon:야이멩돌넌야개쓸 :new_moon:\n"
-                                    ":new_moon_with_face::new_moon: :new_moon_with_face: :new_moon:  :new_moon_with_face: :new_moon: :new_moon_with_face:\n")
-        
-    if message.content.startswith("!아브락스") or message.content.startswith("!아뷰락스") or message.content.startswith("!아뷰락수") or message.content.startswith("!Abrax"):
-        await message.channel.send(":peach::peach::peach::peach::peach::peach::peach::peach:\n"
-                                    ":peach:동탄암컷아뷰락수 :peach:\n"
-                                    ":peach:탄          A              락 :peach:\n"
-                                    ":peach:암          b               뷰 :peach:\n"
-                                    ":peach:컷          r                아 :peach:\n"
-                                    ":peach:아          a               컷 :peach:\n"
-                                    ":peach:뷰          x               암 :peach:\n"
-                                    ":peach:락                           탄 :peach:\n"
-                                    ":peach:수락뷰아컷암탄동 :peach:\n"
-                                    ":peach::peach::peach::peach::peach::peach::peach::peach:")
         
       
         
